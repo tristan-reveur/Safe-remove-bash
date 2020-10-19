@@ -1,8 +1,8 @@
 #!/bin/sh
 
-base_dir="$home/tristan_reveur/RECYCLE"
+base_dir="$~/RECYCLE"
 
-scr=$(readlink -f "$1")
+scr=$(-f "$1")
 
 dest="$base_dir/$scr"
 
