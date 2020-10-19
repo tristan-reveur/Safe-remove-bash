@@ -2,7 +2,7 @@
 
 base_dir="$~/RECYCLE"
 
-scr=$(-f "$1")
+scr=$1
 
 dest="$base_dir/$scr"
 
