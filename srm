@@ -1,12 +1,12 @@
 #!/bin/sh
 
-base_dir="$~/RECYCLE"
+base_dir="~/RECYCLE"
 
 scr=$1
 
-dest="$base_dir/$scr"
+dest="base_dir/scr"
 
-dest_dir=$(dirname "$dest")
+dest_dir=(dirname "dest")
 
 if ! [ -e "$1" ] ; 
   then
@@ -14,6 +14,6 @@ echo "File '$1' not found"
 fi 
 
 gzip "$1"
-mkdir -p "$dest_dir/"
-mv "$1.gz" "$dest_dir/"
-find "$base_dir/" -atime +7 -delete 
+mkdir -p "dest_dir/"
+mv "$1.gz" "dest_dir/"
+find "base_dir/" -atime +7 -delete 
